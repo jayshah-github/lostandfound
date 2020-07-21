@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:src="@drawable/appicon"
+            android:layout_marginTop="64dp"
+
+            android:layout_marginBottom="64dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_margin="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/email"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+
+                    android:textColor="#fff"
+                    android:layout_marginLeft="2dp"
+                    android:backgroundTint="#fff"
+                    android:textColorHint="#fff"
+                    android:id="@+id/emailtxt"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:hint=" Email"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/locked"
+
+                    android:layout_gravity="center_vertical"
+                    />
+                <EditText
+                    android:id="@+id/passwordtxt"
+                    android:textCursorDrawable="@null"
+                    android:textColor="#fff"
+                    android:backgroundTint="#fff"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="match_parent"
+                    android:hint=" Password"
+                    android:textColorHint="#fff"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:text="Login"
+                android:textSize="18sp"
+                android:background="#B71c1c"
+                android:textColor="#ffffff"
+                android:id="@+id/loginbtn"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+android:layout_marginTop="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Don't have an account ? "
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registerlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:clickable="true"
+                    android:text="@string/Signup"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
